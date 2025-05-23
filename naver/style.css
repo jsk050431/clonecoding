@@ -4,7 +4,8 @@
 }
 
 body {
-    height: 100vh;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 header {
@@ -44,10 +45,9 @@ aside {
 }
 
 footer {
-    border-top: 1px solid gray;
     margin-top: 20px;
     text-align: center;
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.5);
 }
 
 main > div,
@@ -77,15 +77,23 @@ aside > * {
 .searchbar-container {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
 }
 
-.searchbar-container > * {
+.searchbar-container > div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 700px;
-    margin-left: 203px;
+    height: 46px;
+    position: relative;
+    /* margin-left: 203px; */
+}
+
+.searchbar-container h1 {
+    position: absolute;
+    left: -80px;
 }
 
 .searchbar {
@@ -102,7 +110,7 @@ aside > * {
     height: 30px;
 }
 
-.searchbar input[type="button"] {
+.searchbar input[type="submit"] {
     width: 50px;
     height: 32px;
 }
@@ -138,7 +146,7 @@ aside > * {
 .main-2-1 {
     display: flex;
     flex-direction: row;
-    height: 150px;
+    height: 200px;
 }
 
 .main-2-1 * {
@@ -236,5 +244,5 @@ footer .information {
     justify-content: center;
     gap: 20px;
     color: gray;
-    margin: 30px 0;
+    padding: 30px 0;
 }
