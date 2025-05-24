@@ -4,7 +4,7 @@
 }
 
 body {
-    width: 1440px;
+    width: 1500px;
     margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ header h1 {
 main {
     display: flex;
     flex-direction: column;
-    flex-grow: 10;
+    flex: 1;
     text-align: center;
     gap: 15px;
     margin-left: 200px;
@@ -38,10 +38,10 @@ main {
 aside {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     text-align: center;
     gap: 10px;
     margin-right: 200px;
+    min-width: 340px;
 }
 
 footer {
@@ -122,41 +122,96 @@ aside > * {
     margin-top: 30px;
 }
 
+.article1 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    border: 1px solid gray;
+    gap: 10px;
+}
+
+.article1 img {
+    width: 130px;
+    border-radius: 3%;
+}
+
+.article1 .text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 7px;
+    flex: 1;
+}
+
+.article1 .company {
+    font-size: 12px;
+}
+
+.article1 .title {
+    width: 198px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.article1 .date {
+    font-size: 12px;
+}
+
 .main-1 {
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 220px;
     align-items: stretch;
+    padding: 10px;
 }
 
-.main-1 * {
+.main-1 > div {
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: center;
 }
 
-.main-1 * * {
+.article2 {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    justify-content: start;
+    align-items: stretch;
+    text-align: start;
     border: 1px solid gray;
-    margin: 10px 10px;
+    gap: 5px;
+}
+
+.article2 img {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.article2 .title {
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.article2 .company {
+    font-size: 13px;
+    padding: 0 10px;
+    color: gray;
 }
 
 .main-2-1 {
     display: flex;
     flex-direction: row;
-    height: 200px;
-}
-
-.main-2-1 * {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid gray;
-    margin: 10px;
+    justify-content: space-between;
+    height: 220px;
+    padding: 10px;
 }
 
 .main-2-2 {
@@ -164,6 +219,7 @@ aside > * {
     flex-direction: row;
     height: 300px;
     align-items: stretch;
+    padding: 10px;
 }
 
 .main-2-2 * {
@@ -171,13 +227,6 @@ aside > * {
     flex-direction: column;
     flex: 1;
     justify-content: center;
-}
-
-.main-2-2 * * {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid gray;
-    margin: 10px 10px;
 }
 
 .login {
