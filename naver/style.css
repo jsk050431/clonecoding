@@ -122,6 +122,19 @@ aside > * {
     margin-top: 30px;
 }
 
+/* 제목 오버플로우시 줄임표 설정 */
+main .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    display: box;
+    box-orient: vertical;
+    line-clamp: 2;
+}
+
 .article1 {
     display: flex;
     flex-direction: row;
@@ -131,6 +144,7 @@ aside > * {
     text-align: center;
     border: 1px solid gray;
     gap: 10px;
+    margin: 5px;
 }
 
 .article1 img {
@@ -148,35 +162,30 @@ aside > * {
 
 .article1 .company {
     font-size: 12px;
+    color: gray;
 }
 
 .article1 .title {
-    width: 198px;
+    /* width: 198px; */
     font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-
-    display: box;
-    box-orient: vertical;
-    line-clamp: 2;
 }
 
 .article1 .date {
     font-size: 12px;
+    color: gray;
 }
 
-.main-1 {
+.main-1,
+.main-2-2 {
     display: flex;
     flex-direction: row;
-    height: 220px;
+    /* height: 200px; */
     align-items: stretch;
     padding: 10px;
 }
 
-.main-1 > div {
+.main-1 > div,
+.main-2-2 > div {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -214,11 +223,11 @@ aside > * {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 220px;
+    /* height: 180px; */
     padding: 10px;
 }
 
-.main-2-2 {
+/* .main-2-2 {
     display: flex;
     flex-direction: row;
     height: 300px;
@@ -231,7 +240,7 @@ aside > * {
     flex-direction: column;
     flex: 1;
     justify-content: center;
-}
+} */
 
 .login {
     display: flex;
