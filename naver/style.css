@@ -23,7 +23,13 @@ header nav {
 }
 
 header h1 {
-    color: gray;
+    color: #03c75a;
+    font-size: 35px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
 }
 
 main {
@@ -51,8 +57,9 @@ footer {
 }
 
 main > div,
-aside > * {
-    border: 1px solid gray;
+aside > div {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
 }
 
 .topMenu {
@@ -93,7 +100,8 @@ aside > * {
 
 .searchbar-container h1 {
     position: absolute;
-    left: -80px;
+    left: -70px;
+    top: -5.5px;
 }
 
 .searchbar {
@@ -101,18 +109,30 @@ aside > * {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     /* padding-left: 70px; */
 }
 
 .searchbar input[type="text"] {
     width: 500px;
     height: 30px;
+
+    border: 2px solid #03c75a;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-right: none;
 }
 
 .searchbar input[type="submit"] {
     width: 50px;
-    height: 32px;
+    height: 34px;
+    border-left: none;
+    border-style: solid;
+    border-color: #03c75a;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    color: white;
+    background-color: #03c75a;
 }
 
 .content {
@@ -120,6 +140,23 @@ aside > * {
     flex-direction: row;
     gap: 30px;
     margin-top: 30px;
+}
+
+.main-1,
+.main-2-2 {
+    display: flex;
+    flex-direction: row;
+    /* height: 200px; */
+    align-items: stretch;
+    padding: 10px;
+}
+
+.main-1 > div,
+.main-2-2 > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
 }
 
 /* 제목 오버플로우시 줄임표 설정 */
@@ -142,7 +179,7 @@ main .title {
     justify-content: start;
     align-items: center;
     text-align: center;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     gap: 10px;
     margin: 5px;
 }
@@ -175,23 +212,6 @@ main .title {
     color: gray;
 }
 
-.main-1,
-.main-2-2 {
-    display: flex;
-    flex-direction: row;
-    /* height: 200px; */
-    align-items: stretch;
-    padding: 10px;
-}
-
-.main-1 > div,
-.main-2-2 > div {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-}
-
 .article2 {
     display: flex;
     flex-direction: column;
@@ -199,13 +219,14 @@ main .title {
     justify-content: start;
     align-items: stretch;
     text-align: start;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     gap: 5px;
 }
 
 .article2 img {
     width: 220px;
     margin: 0 auto;
+    border-radius: 3%;
 }
 
 .article2 .title {
