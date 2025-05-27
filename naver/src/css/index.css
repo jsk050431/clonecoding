@@ -51,6 +51,22 @@ main {
     margin-left: 200px;
 }
 
+/* ====================== */
+/* 이미지 호버 애니메이션 */
+main img {
+    transition: transform 0.2s ease;
+}
+
+.article1:hover img,
+.article2:hover img {
+    transform: scale(1.1);
+}
+
+.image {
+    overflow: hidden;
+}
+/* ====================== */
+
 aside {
     display: flex;
     flex-direction: column;
@@ -196,10 +212,14 @@ main .title {
     margin: 5px;
 }
 
-.article1 img {
+.article1 img,
+.article1 .image {
     width: 130px;
-    border-radius: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+    border-radius: 5px;
 }
+
 
 .article1 .text {
     display: flex;
@@ -235,10 +255,11 @@ main .title {
     gap: 5px;
 }
 
-.article2 img {
+.article2 img,
+.article2 .image {
     width: 220px;
     margin: 0 auto;
-    border-radius: 3%;
+    border-radius: 5px;
 }
 
 .article2 .title {
