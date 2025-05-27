@@ -162,6 +162,12 @@ aside > div {
     background-color: #03c75a;
 }
 
+.searchbar input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #00b451;
+    border-color: #00b451;
+}
+
 .content {
     display: flex;
     flex-direction: row;
@@ -216,7 +222,6 @@ main .title {
     overflow: hidden;
     border-radius: 5px;
 }
-
 
 .article1 .text {
     display: flex;
